@@ -1,13 +1,13 @@
 {% set name = "pydantic-config" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6b59e4d2f2072d0e6a443fe3dbbb012bba04e972e5176a617540e33d0b1ff39c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ea839a9dbdb56b883529093a5a9b186c8a6393dbb5620d4a629b3948897f2a03
 
 build:
   noarch: python
